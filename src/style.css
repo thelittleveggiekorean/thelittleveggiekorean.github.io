@@ -1,0 +1,110 @@
+body {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  background-color: black;
+}
+.hidden {
+  display: none;
+}
+input::placeholder {
+  color: #fff;
+  opacity: 1; /* Firefox */
+}
+#todo_wrapper {
+  display: grid;
+  width: 100vw;
+  height: 100vh;
+  grid-template-columns: 200px 1fr 200px;
+  grid-template-rows: 1fr 500px 1fr;
+  background-position: center;
+}
+#todo_wrapper::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.25);
+  grid-area: 1/1/-1/-1;
+  order: 1;
+}
+
+#todo_wrapper .todo {
+  grid-area: 2 / 2;
+  order: 2;
+}
+
+#todo_wrapper .greeting_area {
+  text-align: center;
+  font-family: "Homemade Apple", cursive;
+}
+#todo_wrapper .greeting_area .question {
+  font-size: 32px;
+  line-height: 52px;
+  padding-bottom: 8px;
+}
+
+#todo_wrapper .greeting_area #login-form input {
+  background-color: transparent;
+  width: 30%;
+  height: 32px;
+  border: 1px solid #fff;
+  border-radius: 6px;
+  text-indent: 10px;
+  color: #fff;
+}
+
+#timer {
+  font-family: "Changa", sans-serif;
+  font-size: 13rem;
+  font-weight: 600;
+  letter-spacing: -10px;
+  margin: 0;
+  line-height: 230px;
+  text-align: center;
+}
+#toDoForm {
+  text-align: center;
+}
+
+#toDoForm input {
+  background-color: transparent;
+  width: 50%;
+  height: 32px;
+  border: 1px solid #fff;
+  border-radius: 6px;
+  text-indent: 10px;
+  color: #fff;
+}
+
+#toDoList {
+  list-style-type: decimal;
+  list-style-position: inside;
+  text-align: center;
+}
+#toDoList li span {
+  padding-right: 4px;
+}
+#toDoList li button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.todo .quotes {
+  font-family: "Homemade Apple", cursive;
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 21px 0;
+}
+
+#weather {
+  font-family: "Changa", sans-serif;
+  text-align: right;
+  grid-area: 1/-2;
+  padding: 18px;
+  line-height: 25px;
+  order: 2;
+}
+#weather p {
+  margin: 0;
+}

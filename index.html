@@ -1,1 +1,51 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="src/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Changa:wght@400;600&&Homemade+Apple&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <div id="todo_wrapper">
+        <div id="weather">
+            <p></p>
+            <p></p>
+        </div>
+        <div class="todo">
+            <h2 id="timer"></h2>
+            <div class="greeting_area">
+                <form class="hidden" id="login-form">
+                    <div class="question">
+                        Good Morning! <br/>
+                        Please enter your name.
+                    </div>
+                    <input type="text" placeholder="Enter your name, here" maxlength="15" required>
+                </form>
+                <h1 id="greeting" class="hidden"></h1>
+            </div>
+           
+            <form id="toDoForm" class="hidden">
+                <input type="text" id="toDoInput" placeholder="Write what you want to do today">
+            </form>
+            <ul id="toDoList"></ul>
+           
+            <div class="quotes">
+                
+                <span></span><br/>
+                <span></span>
+            </div>
+        </div>
+    </div>
+<script src="src/greeting.js"></script>
+<script src="src/timer.js"></script>
+<script src="src/quotes.js"></script>
+<script src="src/background.js"></script>
+<script src="src/todo.js"></script>
+<script src="src/weather.js"></script>
+</body>
+</html>
